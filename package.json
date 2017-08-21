@@ -1,6 +1,16 @@
 {
   "name": "poc-pipe-js",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "jest": "^20.0.4"
+  },
+  "devDependencies": {
+    "moment": "^2.18.1"
+  }
 }
