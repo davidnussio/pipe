@@ -1,7 +1,15 @@
 {
-  "name": "poc-pipe-js",
-  "version": "1.0.0",
+  "name": "@dn/pipe",
+  "version": "0.1.0",
   "main": "src/index.js",
+  "author": {
+    "name": "David Nussio",
+    "email": "david.nussio@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/davidnussio/pipe.git",
+    "type": "git"
+  },
   "license": "MIT",
   "scripts": {
     "test": "jest",
