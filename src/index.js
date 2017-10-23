@@ -8,7 +8,11 @@ module.exports = function pipe() {
     const args = Array.from(arguments);
     return args.reduce((result, fn) => {
         if (isFunction(fn)) {
-            return fn.call(null, result);
+            if (result && result.then) {
+                return result.then((res) => fn.call(null, res) || result);
+            } else {
+                return fn.call(null, result) || result;
+            }
         } else {
             return result;
         }

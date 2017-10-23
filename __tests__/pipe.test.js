@@ -76,3 +76,36 @@ test('should behave...', () => {
         wc
     )).toMatchSnapshot()
 });
+
+
+const asyncDouble = a => new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(a + a)
+    }, 500);
+});
+
+const asyncAdd = (a, b) => new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(a + b)
+    }, 100);
+});
+
+test("Pipe async functions", () => {
+    expect.assertions(1);
+    return expect(pipe(
+        6,
+        asyncDouble,
+        (_) => (_ - 1),
+        (_) => asyncAdd(_, 7)
+    )).resolves.toMatchSnapshot();
+});
+
+test("Test debug console.log functions", () => {
+    expect(pipe(
+        6, 
+        console.log, 
+        (_) => console.log('value: ', _),
+        double,
+        console.log,
+    )).toMatchSnapshot();
+});

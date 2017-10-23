@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Pipe async functions 1`] = `18`;
+
 exports[`Pipe math functions 1`] = `39`;
 
 exports[`Pipe string functions  1`] = `".tm ts rld msp mrL"`;
+
+exports[`Test debug console.log functions 1`] = `12`;
 
 exports[`should behave... 1`] = `3`;
