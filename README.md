@@ -1,4 +1,4 @@
-# @dn/pipe
+# @oggi.ch/pipe
 
 Pipeline: make a chain of functions that the output will be the input of the next function.
 
@@ -13,7 +13,7 @@ $ yarn add @dn/pipe
 ## Usage
 
 ```javascript
-const pipe = require('@dn/pipe');
+const pipe = require('@oggi.ch/pipe');
 pipe(
     initialValue,
     [...functions]
@@ -24,7 +24,7 @@ pipe(
 
 ### Example 1
 ```javascript
-const pipe = require('@dn/pipe');
+const pipe = require('@oggi.ch/pipe');
 
 const double = a => a * 2;
 const sum = (a, b) => a + b;
