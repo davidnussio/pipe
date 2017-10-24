@@ -5,9 +5,9 @@ Pipeline: make a chain of functions that the output will be the input of the nex
 ## Install
 
 ```sh
-$ npm install @dn/pipe
+$ npm install @oggi.ch/pipe
 or
-$ yarn add @dn/pipe
+$ yarn add @oggi.ch/pipe
 ```
 
 ## Usage

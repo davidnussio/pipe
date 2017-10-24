@@ -1,6 +1,6 @@
 {
-  "name": "@dn/pipe",
-  "version": "0.1.0",
+  "name": "@oggi.ch/pipe",
+  "version": "0.1.1",
   "main": "src/index.js",
   "author": {
     "name": "David Nussio",
@@ -16,9 +16,10 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "jest": "^20.0.4"
+   
   },
   "devDependencies": {
-    "moment": "^2.18.1"
+    "moment": "^2.18.1",
+    "jest": "^20.0.4"
   }
 }
