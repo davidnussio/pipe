@@ -1,6 +1,6 @@
 {
   "name": "@oggi.ch/pipe",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "src/index.js",
   "author": {
     "name": "David Nussio",
@@ -15,9 +15,17 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "dependencies": {
-   
-  },
+  "keywords": [
+    "pipe",
+    "compose",
+    "stream",
+    "streams",
+    "flow",
+    "async",
+    "promise",
+    "functions"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "moment": "^2.18.1",
     "jest": "^20.0.4"
